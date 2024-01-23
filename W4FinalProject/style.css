@@ -1,0 +1,123 @@
+body {
+    padding: 20px;
+    background-color: #fff; /* Màu nền trắng */
+    color: #333; /* Màu chữ đen */
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db; /* Màu header */
+    color: #fff; /* Màu chữ trắng */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Thêm CSS cho phần tử nav và danh sách ul */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #3498db; /* Màu chữ khi hover */
+    background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #3498db; /* Màu chữ của tiêu đề section */
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 500px; /* Đặt chiều cao tối đa của ảnh là 500 pixels */
+    width: auto;
+    height: auto;
+    border: 5px solid #3498db; /* Màu viền hình ảnh */
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; /* Màu footer */
+    color: #fff; /* Màu chữ trắng */
+}
+
+/* Style the "Skip to Main Content" link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    opacity: 1;
+}
+
+/* Visually hide the skip link */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
