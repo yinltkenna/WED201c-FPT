@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sytle.css" />
+    <title>Hover Image Preview</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__wrapper">
+        <div class="left-box">
+          <p id="placeholderText">Hover img</p>
+          <div class="preview-box">
+            <img id="imagePreview" src="./pic/default.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right-box">
+          <img
+            class="thumbnail"
+            src="./pic/pic_1.jpg"
+            alt="Image 1"
+            onmouseover="previewImage('./pic/pic_1.jpg','pic 1' )"
+            onmouseout="resetPreview()"
+          />
+          <img
+            class="thumbnail"
+            src="./pic/pic_2.jpg"
+            alt="Image 2"
+            onmouseover="previewImage('./pic/pic_2.jpg','pic 2' )"
+            onmouseout="resetPreview()"
+          />
+          <img
+            class="thumbnail"
+            src="./pic/pic_3.jpg"
+            alt="Image 3"
+            onmouseover="previewImage('./pic/pic_3.jpg','pic 3' )"
+            onmouseout="resetPreview()"
+          />
+          <img
+            class="thumbnail"
+            src="./pic/pic_4.jpg"
+            alt="Image 4"
+            onmouseover="previewImage('./pic/pic_4.jpg','pic 4' )"
+            onmouseout="resetPreview()"
+          />
+          <img
+            class="thumbnail"
+            src="./pic/pic_5.jpg"
+            alt="Image 5"
+            onmouseover="previewImage('./pic/pic_5.jpg','pic 5' )"
+            onmouseout="resetPreview()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
